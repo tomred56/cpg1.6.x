@@ -14,3 +14,7 @@ sv_*
 .git*
 .htaccess
 php.ini
+
+albums/Fortrose/*
+albums/jewlery/*
+albums/Scanned_Slides/*
