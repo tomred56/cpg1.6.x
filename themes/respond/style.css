@@ -1,0 +1,376 @@
+#h5gal-name a {
+	color: white;
+	text-decoration: none;
+}
+#h5gal-desc {
+	color: white;
+}
+#h5gal-name2 a {
+	color: darkcyan;
+	text-decoration: none;
+}
+#h5gal-desc2 {
+	color: darkcyan;
+}
+
+/****************************** navbar area */
+#navbar ul {
+	margin-top: 0;
+	margin-bottom: 4px;
+}
+.navbar-default {
+	background-color: #EEEEEE;
+}
+.navbar-toggle {
+	background-color: #FFF;
+}
+.crumbs, .a-lst-tabs {
+	background-color: lavender;
+	background-image: linear-gradient(#b39ddb,white);
+	font-weight: bolder;
+	padding: 6px 6px;
+	margin-bottom: .7rem;
+}
+.a-lst-tabs {
+	background-image: linear-gradient(white,#b39ddb);
+}
+
+.gal_desc {
+	text-align: right;
+}
+
+.h5r-nav-tabs {
+	float: right;
+}
+
+/****************************** Section Headers */
+.catl_row, .catrow_noalb {
+	border-bottom: 1px solid #DDD;
+	border-top: 1px solid #AAA;
+	padding-left: .5rem;
+}
+.r-nav-bar {
+	background-color: darkseagreen;
+	padding: 4px 8px;
+	margin-bottom: 6px;
+	text-align: center;
+}
+/*
+.nav_thumb, .nav_info, .nav_slide {
+	margin-right: 8px;
+}
+.nav_thumb, .nav_info, .nav_slide, .nav_start, .nav_prev, .nav_next, .nav_end {
+}
+.nav_thumb {
+	left: 8px;
+}
+.nav_info {
+	left: 32px;
+}
+.nav_slide {
+	left: 56px;
+}
+.nav_start {
+	right: 80px;
+}
+.nav_prev {
+	right: 56px;
+}
+.nav_next {
+	right: 32px;
+}
+.nav_end {
+	right: 8px;
+}*/
+
+/****************************** Section Footers */
+.ca-lst-tabs {
+	background-color: lavender;
+	color: black;
+	padding: 4px 8px;
+	margin-bottom: 2rem;
+}
+.cat-stats {
+	background-color: blueviolet;
+	color: white;
+	padding: 4px 8px;
+	margin-bottom: 2rem;
+}
+
+/****************************** Cell/Thumbnail Blocks */
+.alb-img-cels, .cat-alb-cels, .catl-alb-cels {
+}
+.alb-img-cels {
+	justify-content: center;
+}
+.cat-albums {
+	padding: 0 1rem;
+}
+.display_media {
+	text-align: center;
+}
+
+/****************************** category list */
+.catl_row_h {
+	background: #EEEEEE;
+	color: #333;
+	font-size: 1.4rem;
+}
+.c_album_cell, .album_cell {
+	position: relative;
+	background-color: aliceblue;
+	padding: 8px 4px 8px 8px;
+	border: 1px solid #CCC;
+	margin: 4px;
+}
+.c_album_etc {
+	width: 160px;
+	padding: 2px 0 2px 8px;
+}
+.c_album_thm a, .album_thm a {
+	min-width: 160px;
+}
+.album_cell_inf p:first-child, .c_album_cell_inf p:first-child {
+	font-size: small;
+}
+.alb-adm-act {
+	position: absolute;
+	top: 2px;
+	right: 6px;
+}
+.album_stat {
+	font-size: smaller;
+	clear: both;
+	margin-bottom: 2px;
+}
+
+.album-cell {
+/*	width: 300px; */
+	background-color: #F8F8F8;
+	margin: 4px;
+/*	border: 1px solid #DDD;
+	padding: 4px; */
+}
+.alb-cel-ttl {
+	background-color: darkseagreen;
+	padding: 1px 4px;
+}
+.alb-cel-ttl a {
+	text-decoration: none;
+	color: #FFF;
+}
+.alb-cel-etc {
+	padding: 0 4px;
+}
+.alblink {
+	font-size: 1.1rem;
+}
+
+/****************************** Image View */
+.r-nav-bar table {
+	width:100%;
+}
+td.navmenu {
+	text-align: center;
+}
+td.navmenu.navb {
+	width: 24px;
+}
+
+/*
+.img-nav-left, .img-nav-right {
+	width: 15%;
+    display: inline-block;
+    white-space: nowrap;
+}
+.img-nav-left {
+	float: left;
+    text-align: left;
+}
+.img-nav-right {
+	float: right;
+    text-align: right;
+}
+.img-nav-center {
+	width: 60%;
+	display: inline-block;
+    text-align: center;
+}
+*/
+
+.r-nav-bar img {
+	vertical-align: text-top;
+	padding: 0 4px;
+}
+.img-nav-left {
+	text-align: left;
+}
+.img-nav-right {
+	text-align: right;
+}
+.img-nav-center {
+	text-align: center;
+}
+
+.i-image {
+	margin: auto;
+}
+.media-etc {
+	text-align: center;
+}
+.media-admin ul {
+	display: inline-flex;
+}
+.media-admin ul li {
+	padding: 0 6px;
+}
+
+
+/****************************** thumbnails */
+.r-thumbnail {
+	text-align: center;
+	padding: 8px;
+/*	min-height: 170px;*/
+}
+.r-thumbnail span {
+	font-size: smaller;
+}
+/*.r-thm-box.landscap img {
+	position:relative;
+	left: -16px;
+}*/
+
+.alb-img-blk {
+	background-color: #CCC;
+	background-image: linear-gradient(#CCC, #FFF);
+	border-top: 1px solid #BBB;
+	padding: 4px;
+}
+
+.alb-img-blk img {
+	margin-right: 8px;
+}
+
+.alb-img-blk .statlink h2 {
+	background-image: url(images/box_left_icon.gif);
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left: 18px;
+/*	font-size: 2rem;*/
+	margin: 0px;
+}
+
+.thm-frame {
+	border: 1px solid #EEE;
+	padding: 1px;
+}
+
+.alb-frame {
+	background-color: #BBB;
+	border: 1px solid #CCC;
+	border-radius: 3px;
+	padding: 4px;
+}
+
+.r-thm-tabs {
+	background-color: #CCC;
+	background-image: linear-gradient(#FFF,#CCC);
+	border-bottom: 1px solid #BBB;
+	padding: 4px;
+}
+
+
+/****************************** system messages */
+.cpg_message {
+	margin: 1rem;
+	border: 1px solid #CCC;
+	border-radius: 7px;
+	padding: 0.5rem;
+}
+.cpg_message h2 {
+	margin: 4px 0;
+}
+.cpg_user_message {
+	padding: 1rem;
+	margin-bottom: 4px;
+}
+.cpg_message_info {
+	background-color: #D9EDF7;
+	border-color: mediumblue;
+	color: darkblue;
+}
+.cpg_message_success {
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
+	color: darkgreen;
+}
+.cpg_message_validation {
+	background-color: #FFCCBA;
+	border-color: indianred;
+	color: darkred;
+}
+.cpg_message_warning {
+	background-color: #FFFFBB;
+	border-color: #F80;
+	color: darkred;
+}
+.cpg_message_error {
+	background-color: #FFDEDE;
+	border-color: #F00;
+	color: darkred;
+}
+
+
+/****************************** miscellaneous */
+.img-votes {
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.footer {
+	text-align: center;
+	margin-top: 3rem;
+}
+
+.buttonlist-ca ul li, .buttonlist-a ul li {
+	margin-right: .5rem;
+	float: left;
+}
+
+.cmnt-blk {
+	background-color: cadetblue;
+	color: white;
+}
+
+/****************************** help popups (greybox) */
+.nobgimage {
+	background-color: white;
+}
+.cpg_summary {
+	font-size: 0.9rem;
+	border: 1px solid;
+	margin: 0 0 0 5px;
+	padding: 5px 10px 5px 10px;
+	background-color: #E1F5FE;
+	text-align: right;
+	float: right;
+}
+/****************************** list tables */
+div[id^="section"] table {
+	background-color: #F8F8F8;
+}
+div[id^="section"] .tableb_alternate {
+	background-color: #F0F0F0;
+}
+
+/******************************** differences for small screen */
+@media (max-width: 767px) {
+	.navbar-default {
+		background-color: #EDE7F6;
+	/*	background-image: url(images/banner.jpg);
+		color: white;*/
+	}
+/*	#h5gal-name .navbar-brand {
+		color: white;
+	}*/
+}

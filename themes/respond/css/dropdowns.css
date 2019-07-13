@@ -1,0 +1,131 @@
+.dropdowns nav, .dropdowns ul, .dropdowns li, .dropdowns a	{margin: 0; padding: 0;}
+
+.dropdowns a {text-decoration: none;}
+
+.toggleMenu {
+	display: none;
+}
+
+ul { list-style: none; }
+ul, li { padding:0 }
+
+.parent::before {
+	font-family: "FontAwesome";
+	font-weight: 700;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	width: 11px;
+	color: #999;
+}
+
+a.parent:before {
+	content: "\f0da";
+}
+li.hover > a.parent:before {
+	content: "\f0d7";
+}
+
+.nav {
+	list-style: none;
+}
+
+.nav li {
+	margin:0;
+}
+.nav > li > a:hover {
+	color: forestgreen;
+}
+.nav li li {
+	margin:0;
+	background-color: #DDD;
+	white-space: nowrap;
+}
+.nav li li:hover {
+	background-color: #E8E8E8;
+}
+.nav li li li {
+	margin:0;
+	background-color: #EEE;
+	white-space: nowrap;
+}
+.nav li li li:hover {
+	background-color: #F8F8F8;
+}
+
+.nav:before,
+.nav:after {
+	content: " "; 
+	display: table; 
+}
+.nav:after {
+	clear: both;
+}
+.nav ul {
+	list-style: none;
+	z-index: 101;
+}
+.nav a {
+	padding: 4px 15px;
+	text-decoration: none;
+}
+.nav a:link, .nav a:visited {
+	color: inherit;
+}
+.nav li {
+	position: relative;
+}
+.nav > li {
+	float: left;
+}
+
+.nav > li > a {
+	display: block;
+}
+.nav li	 ul {
+	position: absolute;
+	left: -9999px;
+}
+.nav > li.hover > ul {
+	left: 0;
+}
+.nav li li.hover ul {
+	left: 100%;
+	top: 0;
+}
+.nav li li a {
+	display: block;
+	position: relative;
+	z-index:100;
+}
+.nav li li li a {
+	z-index:200;
+}
+
+@media screen and (max-width: 768px) {
+	.nav {display:none;}
+	.active {
+		display: block;
+	}
+	.nav > li {
+		float: none;
+	}
+	.nav ul {
+		display: block;
+		width: 100%;
+	}
+	.nav > li.hover > ul , .nav li li.hover ul {
+		position: static;
+	}
+
+	.nav li a {
+		margin-left: inherit;
+	}
+	.nav li li a {
+		margin-left: 1rem;
+	}
+	.nav li li li a {
+		margin-left: 2rem;
+	}
+}

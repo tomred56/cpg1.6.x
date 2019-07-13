@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="{LANG_DIR}">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={CHARSET}" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{TITLE}</title>
+{META}
+<link rel="stylesheet" href="css/coppermine.css" type="text/css" />
+<link rel="stylesheet" href="themes/mobile_light/style.css" type="text/css" />
+<link rel="shortcut icon" href="favicon.ico" />
+{JAVASCRIPT}
+</head>
+<body>
+  {CUSTOM_HEADER}
+  <table width="100%" border="0">
+    <tr>
+      <td valign="top" style="background-color: #FFFFFF;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="50%" align="left">
+              <a href="index.php"><h1>{GAL_NAME}</h1></a>
+            </td>
+            <td width="50%" align="right">
+              <select class="listbox" onchange="if (this.options[this.selectedIndex].value) window.location.href=this.options[this.selectedIndex].value;">
+                <option disabled="disabled" selected="selected">{JUMP_TO_PAGE}</option>
+                {SYS_MENU}
+                {SUB_MENU}
+                {ADMIN_MENU}
+                <optgroup label="----------"></optgroup>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td valign="top">
+              {MESSAGE_BLOCK}
+              {GALLERY}
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  {CUSTOM_FOOTER}
+  {CREDITS}
+</body>
+</html>

@@ -1,0 +1,384 @@
+/** some universal classes **/
+.left {
+	text-align: left;
+}
+.center {
+	text-align: center;
+}
+.right {
+	text-align: right;
+}
+
+input, textarea {	/* prevent small screen zoom on text entry */
+	font-size: initial;
+}
+
+#toggleMenu {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	border-radius: 5px;
+	background-color: white;
+	color: #BBB;
+}
+#toggleMenu:focus {
+	outline: none;
+}
+#toggleMenu i {
+	vertical-align: middle;
+	font-size: x-large;
+}
+
+
+
+.container {
+	margin-left: inherit;
+	margin-right: inherit;
+}
+.row {	/* keep bootstrap 3 from creating extra space on right side of iphone */
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="cols-"] {
+  float: left;
+/*  padding: 15px; */
+}
+
+.cols-1 {width: 8.33%;}
+.cols-2 {width: 16.66%;}
+.cols-3 {width: 25%;}
+.cols-4 {width: 33.33%;}
+.cols-5 {width: 41.66%;}
+.cols-6 {width: 50%;}
+.cols-7 {width: 58.33%;}
+.cols-8 {width: 66.66%;}
+.cols-9 {width: 75%;}
+.cols-10 {width: 83.33%;}
+.cols-11 {width: 91.66%;}
+.cols-12 {width: 100%;}
+
+.navbar-brand {
+/*	padding: 3px .5rem; */
+	height: auto;
+}
+.navbar-brand h2 {
+	margin: 0;
+	font-size: 2rem;
+}
+.thumbnail {
+	padding: 0;
+	border: none;
+	border-radius: initial;
+	margin-bottom: 0;
+}
+h1, h2, h3 {
+	margin-top: 0.5em;
+}
+
+tr.tableb td {
+	padding: 5px;
+}
+tr.tableb.tableb_alternate {
+	background-color: #EEE;
+}
+
+.buttonlist-ca {
+/*	position: absolute;
+	top: 4px;
+	right: 0; */
+	float: right;
+}
+.buttonlist-ca ul, .buttonlist-a ul {
+	list-style: none;
+	font-size: small;
+}
+.buttonlist-ca .icon {
+	margin-right: .5rem;
+}
+.buttonlist-a {
+	float: right;
+}
+.buttonlist-a ul {
+	padding-left: 2rem;
+}
+.sortorder_cell {
+	float: right;
+}
+
+/****************************** flexible lists of cells (thumbnails) */
+.alb-img-cels, .cat-alb-cels, .catl-alb-cels {
+	display: flex;
+	flex-wrap: wrap;
+}
+.alb-img-cels-h, .cat-alb-cels-h, .catl-alb-cels-h {
+}
+.alb-img-cels-s, .cat-alb-cels-s, .catl-alb-cels-s {
+}
+
+/****************************** category list */
+.catl_row_h {
+	background: #8AA5B5;
+	color: #FFF;
+	font-size: 2rem;
+	position: relative;
+/*	height: 1.6em; */
+}
+.catl_row, .catrow_noalb {
+	position: relative;
+}
+.catl_row_c1 span img {
+	float: left;
+	height: 2.5rem;
+}
+.catl_row_c2, .catl_row_c3 {
+	position: absolute;
+	top: 0;
+	width: 6rem;
+	text-align: center;
+/*	padding-top: 2px; */
+}
+.catl_row_c2 {
+	right: 6rem;
+}
+.catl_row_c3 {
+	right: 0;
+}
+.catl_row_albums {
+	padding: 0 10px;
+	display: none;
+}
+.catlink {
+	display: block;
+	font-size: 1.3rem;
+}
+.c_header, .al_header {
+	display: flex;
+	flex-wrap: wrap;
+}
+.c_album_cell_inf {
+/*	display:flex; */
+}
+.category_collapsed, .category_expanded {
+	cursor: pointer;
+	position: relative;
+	padding: 5px 14px;
+	background-repeat:no-repeat;
+	background-image:url('images/disclosure.png');
+}
+.category_collapsed {
+	background-position: -1px 3px;
+}
+.category_expanded {
+	background-position: -1px -17px;
+}
+
+/****************************** thumbnails */
+.thumbnails {
+/*	background: #F2F5F7 ;
+	padding: 5px;*/
+}
+.r-thumbnail {
+/*	float: left;*/
+}
+.r-thumbnail span {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.r-thm-box, .a-thm-box {
+/*	width: 120px;
+	height: 120px;	*/
+	margin: 2px;
+	overflow: hidden;
+	border: 1px solid #EEE;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.a-thm-box {
+	float: left;
+	margin-right: .6rem;
+	margin-bottom: 5px;
+}
+.c_album_thm {
+/*	width: 120px;
+	height: 120px;	*/
+	display: flex;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+}
+
+.album-cell {
+	position: relative;
+}
+
+/****************************** intermediate image */
+.display_media .image {
+	max-width: 100%;
+	height: auto;
+}
+
+
+td.tableb {
+	padding: 6px 4px;
+}
+.tableb .checkbox {
+	display: initial;
+}
+.tableb label {
+	margin-right: 1em;
+}
+
+/****************************** admin areas */
+#album_sort td {
+	white-space: nowrap;
+}
+
+/****************************** user admin */
+.tableb .buttonlist ul {
+	list-style: none;
+	padding-left: 1em;
+}
+.tableh1 .buttonlist li {
+	display: inline-block;
+	margin-right: 8px;
+}
+
+
+/****************************** Greybox used for help pop-ups */
+.modal-header {
+	padding: 0 15px;
+}
+.modal-header .close {
+	margin-top: 8px;
+}
+.modal-footer {
+	padding: 0 15px;
+}
+.btn {
+	padding: 0 12px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+#gbframe {
+	width: 100%;
+	height: 480px;
+	overflow: scroll;
+}
+
+
+/****************************** admin, config, accordians, etc */
+.tableh1 {
+	background-color: darkseagreen;
+	padding: 2px 4px;
+}
+#cpgform .tableh1 {
+	background-color: lightsteelblue;
+}
+.detail_expand_all, .detail_collapse_all, .detail_toggle_all {
+	font-size: .8rem;
+}
+
+.detail_head_collapsed:before, .detail_head_expanded:before {
+	font-family: "FontAwesome";
+	font-weight: 700;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	width: 11px;
+	color: #999;
+}
+
+.detail_head_collapsed:before {
+	content: "\f0da";
+}
+.detail_head_expanded:before {
+	content: "\f0d7";
+}
+
+.detail_head_collapsed, .detail_head_expanded {
+	cursor: pointer;
+	position: relative;
+	padding: 0 8px;
+}
+
+div[id^="section"] {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+div[id^="section"] .checkbox, div[id^="section"] .radio {
+	display: inline;
+	margin-right: .5em;
+}
+
+div[id^="section"] label {
+	font-weight: normal;
+}
+
+/** bootstrap overrides **/
+.navbar-nav>li>a {
+	padding-right: 0;
+}
+input[type=radio], input[type=checkbox] {
+	display: inline;
+	margin-right: .5rem;
+}
+input[type=file] {
+	display: inline;
+}
+
+/** responsive adjustments **/
+
+@media (max-width: 767px) {
+	.container-fluid {
+		padding: 0;
+	}
+	button.navbar-toggle {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.col-xs-6 {
+		width: 100%;
+	}
+	.col-xs-6.gal_desc {
+		text-align: left;
+	}
+	.col-xs-6.gal_desc span {
+		padding-left: .5rem;
+	}
+	#h5banner {
+		display: none;
+	}
+	.alb-img-cels, .cat-alb-cels, .catl-alb-cels {
+		justify-content: space-evenly;
+	}
+}
+
+@media (min-width: 768px) {
+	#h5gal-name {
+		position: absolute;
+		top: 12px;
+		left: 18px;
+	}
+	#h5gal-name a {
+		font-size: xx-large;
+	}
+	#h5gal-desc {
+		position: absolute;
+		top: 12px;
+		right: 18px;
+		font-size: larger;
+		font-weight: bold;
+	}
+}

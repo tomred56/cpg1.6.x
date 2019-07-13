@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="{LANG_DIR}">
+<head>
+<title>{TITLE}</title>
+<!-- H5Respond version {H5R_VER} -->
+<meta http-equiv="Content-Type" content="text/html; charset={CHARSET}" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+{META}
+<!-- <link rel="stylesheet" href="css/coppermine.css" type="text/css" /> -->
+
+<link href="{THEME_DIR}css/normalize.css" type="text/css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+
+<link href="{THEME_DIR}css/theme.css" type="text/css" rel="stylesheet" />
+<link href="{THEME_DIR}css/dropdowns.css" type="text/css" rel="stylesheet" />
+<link href="{THEME_DIR}css/micromodal.css" type="text/css" rel="stylesheet" />
+{DYN_CSS}
+<!-- theme overrides for specific installed instance -->
+<link href="{THEME_DIR}{STYLE_CSS}" type="text/css" rel="stylesheet" />
+
+<link rel="shortcut icon" href="favicon.ico" />
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.2/jquery.min.js"></script> -->
+<!-- <script>window.jQuery || document.write('<script src="{THEME_DIR}js/jquery-1.9.1.min.js">\x3C/script>')</script> -->
+
+{JAVASCRIPT}
+<script src="{THEME_DIR}js/jquery-migrate-1.4.1.min.js"></script>
+<script src="{THEME_DIR}js/jquery.mobile.custom.min.js"></script>
+<script src="{THEME_DIR}js/theme.js"></script>
+<script src="{THEME_DIR}js/dropdowns.js"></script>
+<script src="{THEME_DIR}js/micromodal.min.js"></script>
+<!-- <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script> -->
+</head>
+<body>
+{CUSTOM_HEADER}
+<div>
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="containerer-fluid">
+			{BANNER}
+		<!--	<div class="row" style="position:relative">
+				<div id="h5banner"><img src="{ THEME_DIR }images/banners/banner5.jpg" alt="" style="width:100%"></div>
+				<div id="h5gal-name" class="col-xs-6">
+						<a class="navbar-brand" href="index.php"><h2>{ GAL_NAME }</h2></a>
+				</div>
+				<div id="h5gal-desc" class="col-xs-6 gal_desc">
+					<span>{ GAL_DESCRIPTION }</span>
+				</div>
+			</div> -->
+			<div class="navbar-header">
+				<button type="button" id="toggleMenu" class="toggleMenu" aria-expanded="false" aria-controls="navbar">
+					<i class="fa fa-bars"> </i>
+				</button>
+			</div>
+			<div id="navbar">
+				<!-- <a class="toggleMenu" href="#"><i class="fa fa-bars" style="font-size:large"> </i></a> -->
+				<ul class="nav navbar-nav">
+					{SYS_MENU}
+					{SUB_MENU}
+					{ADMIN_MENU}
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+	<div class="containerer-fluid">
+		{MESSAGE_BLOCK}
+		{GALLERY}
+	</div>
+</div>
+{CUSTOM_FOOTER}
+{CREDITS}
+
+<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+	<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+			<header class="modal__header">
+				<h2 class="modal__title" id="modal-1-title">
+					<span>Dialog</span> <img id="mmflodr" src="images/loader.gif" alt="">
+				</h2>
+				<button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+			</header>
+			<main class="modal__content" id="modal-1-content">
+				<iframe id="mmframe" src="" onload="$('#mmflodr').hide()"></iframe>
+			</main>
+			<footer class="modal__footer">
+				<button class="modal___btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+			</footer>
+		</div>
+	</div>
+</div>
+
+<script>
+	function nav_jmp2 (sel) {
+		if (sel.options[sel.selectedIndex].value) window.location.href = sel.options[sel.selectedIndex].value;
+	}
+	GB_ANIMATION = false;	// dispense with the jquery animation
+	$("#navbar").dropdowns();
+</script>
+</body>
+</html>
